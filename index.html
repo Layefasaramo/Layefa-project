@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title>Border Radius Previewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>Border Radius Previewer</h1>
+
+  <div class="preview-container">
+    <div id="box"></div>
+  </div>
+
+  <div class="controls">
+    <div class="row">
+      <label>Top Left</label>
+      <input type="range" min="0" max="100" value="20" data-pos="tl">
+    </div>
+
+    <div class="row">
+      <label>Top Right</label>
+      <input type="range" min="0" max="100" value="20" data-pos="tr">
+    </div>
+
+    <div class="row">
+      <label>Bottom Right</label>
+      <input type="range" min="0" max="100" value="20" data-pos="br">
+    </div>
+
+    <div class="row">
+      <label>Bottom Left</label>
+      <input type="range" min="0" max="100" value="20" data-pos="bl">
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="row">
+      <label>Horizontal Radius</label>
+      <input type="range" min="0" max="100" value="20" data-pos="h">
+    </div>
+
+    <div class="row">
+      <label>Vertical Radius</label>
+      <input type="range" min="0" max="100" value="20" data-pos="v">
+    </div>
+  </div>
+
+  <pre id="css-output"></pre>
+
+  
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
