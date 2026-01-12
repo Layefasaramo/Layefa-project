@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPick | Expert Laptop Guides</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo" onclick="app.navigate('home')">
+                <span class="icon">💻</span>
+                <span class="brand">TechPick</span>
+            </div>
+            <nav class="navbar">
+                <button class="nav-btn active" data-page="home">Home</button>
+                <button class="nav-btn" data-page="about">About</button>
+                <button class="nav-btn" data-page="contact">Contact</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="home" class="page active">
+            <div class="hero">
+                <h1>Upgrade Your <span class="highlight">Performance.</span></h1>
+                <p>Expert advice to help you pick the right hardware for your journey.</p>
+            </div>
+
+            <div class="category-grid">
+                <div class="card">
+                    <h3>Creatives</h3>
+                    <p>Optimized for Blender, Adobe, and rendering.</p>
+                </div>
+                <div class="card">
+                    <h3>Students</h3>
+                    <p>Lightweight builds with 12+ hour battery.</p>
+                </div>
+                <div class="card">
+                    <h3>Gamers</h3>
+                    <p>High refresh rates and RTX power.</p>
+                </div>
+            </div>
+
+            <div class="tool-box">
+                <h2>Quick Recommendation</h2>
+                <div class="flex-row">
+                    <select id="budgetSelect">
+                        <option value="budget">Under $600</option>
+                        <option value="mid">Between $600 - $1200</option>
+                        <option value="premium">Over $1200</option>
+                    </select>
+                    <button id="findBtn">Get Pick</button>
+                </div>
+                <p id="resultDisplay" class="result-text"></p>
+            </div>
+        </section>
+
+        
+        <section id="about" class="page">
+            <div class="content-block">
+                <h2>Our Mission</h2>
+                <p>TechPick was founded to democratize technology hardware knowledge. We bridge the gap between complex specs and user needs.</p>
+                <p>Inspired by the precision of a world-class football academy, we vet every laptop to ensure it meets our high standards for durability and speed.</p>
+            </div>
+        </section>
+
+        
+        <section id="contact" class="page">
+            <div class="contact-form-wrapper">
+                <h2>Get in Touch</h2>
+                <form id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Tell us what you're looking for..." rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div id="successMsg" class="hidden success">Message sent to the dugout!</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 TechPick. Built for the community. Visca el Barça! 🔵🔴</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
